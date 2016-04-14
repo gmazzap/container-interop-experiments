@@ -20,8 +20,8 @@ interface ServiceProviderInterface
     /**
      * Returns an array of service factories in form of callback.
      *
-     * The callback will receive 3 arguments: service name, an instance of container interface
-     * and optionally a callback that return an instance of the previous value for the service.
+     * The callback will receive 2 arguments: an instance of container interface and optionally
+     * a callback that return an instance of the previous value for the service.
      *
      * @return callable[]
      */
