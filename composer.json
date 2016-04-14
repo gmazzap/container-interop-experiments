@@ -1,0 +1,21 @@
+{
+    "name":        "gmazzap/container-interop-experiments",
+    "description": "My experiments for container Interop https://github.com/container-interop",
+    "type":        "library",
+    "license":     "MIT",
+    "autoload":    {
+        "psr-4": {
+            "GM\\InteropExperiments\\":        "src/",
+            "GM\\InteropExperiments\\Exp01\\": "experiment-01/src/",
+            "GM\\InteropExperiments\\Exp02\\": "experiment-02/src/",
+            "GM\\InteropExperiments\\Exp03\\": "experiment-03/src/"
+        }
+    },
+    "require":     {
+        "php":                                 ">=5.6",
+        "pimple/pimple":                       "^3.0",
+        "container-interop/container-interop": "^1.1",
+        "mustache/mustache":                   "^2.9",
+        "zendframework/zend-diactoros":        "^1.3"
+    }
+}

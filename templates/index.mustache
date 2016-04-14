@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}: {{language}}</title>
+</head>
+<body style="margin: 30px;">
+    <h3>{{title}}</h3>
+    <p>An experiment to see how Container Interop Service Provider could work.</p>
+    <p>See <a href="https://github.com/container-interop/service-provider" target="_blank">here</a> for more info.</p>
+    <hr>
+    <h1><a title="&quot;Hello World&quot; in {{language}}">{{greeting}}</a></h1>
+    <p><em>Language: "{{language}}"</em></p>
+    <p>
+        Append to the URL: <pre>?lang='xx'</pre> (replacing "xx" with a supported language)
+        to see the greeting on this page shown in a different language.
+    </p>
+    <p>
+        Supported languages are:<br>
+        <ul>
+            {{#languages}}
+            <li><a href="{{base_url}}?lang={{.}}">{{.}}</a></li>
+            {{/languages}}
+        </ul>
+    </p>
+    <p>
+        Requiring un unsupported language will trigger an exception. (<a href="{{base_url}}?lang=xxx">Try</a>).
+    </p>
+    <p>
+        <small>
+            Translations provided by
+            <a href="https://translate.google.com" target="_blank">Google Translate</a>
+        </small>
+    </p>
+    <hr>
+    <p><a href="{{index_url}}">&laquo; Back to experiments index</a></p>
+</body>
+</html>
